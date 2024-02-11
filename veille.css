@@ -9,7 +9,7 @@
 
 .Acceuil {
     display: flex;
-    background: url("react-couverture.png") no-repeat center;
+    background: url("react-couverture.PNG") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -228,14 +228,16 @@ section .title::after {
 
 
 
+
+
 /* services section styling */
 .veille {
-    color: #fff;
-    background: #111;
+    color: #111;
+    background: #fff;
 }
 
 .veille .title::before {
-    background: #fff;
+    background: #111;
 }
 
 .veille .title::after {
@@ -244,13 +246,10 @@ section .title::after {
 }
 
 .veille .veille-content .card {
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    width: calc(30% - 20px); /* Réduisez la largeur des cartes à environ 30% de l'écran */
+    margin: 20px; /* Ajoutez une marge autour de chaque carte pour augmenter l'espacement */
+    background: #111;
+    color: #fff;
 }
 
 .veille .veille-content .card:hover {
@@ -258,7 +257,7 @@ section .title::after {
 }
 
 .veille .veille-content .card .box {
-    transition: all 0.3s ease;
+    padding: 30px 20px; /* Ajoutez un remplissage interne aux cartes */
 }
 
 .veille .veille-content .card:hover .box {
@@ -276,10 +275,13 @@ section .title::after {
 }
 
 .veille .veille-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin-bottom: 20px; /* Ajoutez de l'espace en bas du texte */
 }
+
+.card .additional-text {
+    display: none;
+}
+
 
 /* footer section styling */
 footer {

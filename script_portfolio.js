@@ -71,3 +71,26 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+
+// Sélectionner tous les boutons "Voir plus"
+const seeMoreButtons = document.querySelectorAll('.see-more-btn');
+
+// Parcourir chaque bouton et ajouter un écouteur d'événements au clic
+seeMoreButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Sélectionner l'élément parent du bouton (la boîte) et chercher l'élément .additional-text
+        const additionalText = button.parentNode.querySelector('.additional-text');
+        
+        // Si additionalText est visible, le masquer; sinon, l'afficher
+        if (additionalText.style.display === 'block') {
+            additionalText.style.display = 'none';
+            button.innerText = 'Voir plus';
+        } else {
+            additionalText.style.display = 'block';
+            button.innerText = 'Voir moins';
+        }
+    });
+});
