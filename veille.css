@@ -9,7 +9,7 @@
 
 .Acceuil {
     display: flex;
-    background: url("react-couverture.PNG") no-repeat center;
+    background: url("react-couverture.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
